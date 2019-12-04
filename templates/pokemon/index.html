@@ -1,0 +1,247 @@
+
+{% load staticfiles %}
+<!--Versión del HTML-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--Función en js que muestra la hora-->
+<script>
+    function ver_horas()
+    {
+        var mihora = new Date();
+        var horas = mihora.getHours().toString();
+        var minutos =mihora.getMinutes().toString();
+        if(minutos.length == 1) minutos="0" + minutos;
+        var segundos =mihora.getSeconds().toString();
+        if(segundos.length == 1 ) segundos="0"+ segundos;
+        document.forms[0].mireloj.value= "Hora actual: " + horas + ":" + minutos + ":"+ segundos; 
+    }
+</script>
+<title>PokeDUOC</title>
+<!--Función js que avisa que la pagina utilizá cookies-->
+<script>
+    alert("Esta página utiliza utiliza cookies para mejorar la experiencia del usuario dentro de su sesión");
+</script>
+<link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+
+<!-- Librerias del css (para darle forma al carrusel de imagenes) -->
+<link rel="stylesheet" href="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %}" >
+<!-- Librerias del js -->
+<script src="{% static 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js' %}"></script>
+<!-- Libreria del js-->
+<script src="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js' %}" ></script>
+</head>
+<body style="background:#0069A5;">
+    <form>
+    <p align="center">
+        <input id="colour" type="text" size="20" name="mireloj">
+    </p>
+    </form>
+<script>
+    var r = setInterval("ver_horas()",500);
+</script>
+
+
+<div class="row"><!--seccion-->
+<div class="col-lg-2 cols-12" >
+    <div class="box">
+        <a href="http://localhost:8000/pokemon/">
+        <img src="{% static 'imagenes/logo.png' %}" width="91.5%">
+    </a>
+    </div>
+</div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+                <a href="http://localhost:8000/pokemon/Videojuegos">
+                <img src="{% static 'imagenes/logo 1.png' %}" width="90.2%">
+                </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+                <a href="http://localhost:8000/pokemon/Competitivo">
+                <img src="{% static 'imagenes/logo 2.png' %}" width="100%">
+                </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+                <a href="http://localhost:8000/pokemon/Anime">
+                <img src="{% static 'imagenes/logo 3.png' %}" width="60%">
+                </a>
+        </div>
+    </div>
+        <div class="col-lg-2 col-xs-12">
+            <div class="box">
+                <a href="http://localhost:8000/pokemon/Manga">
+                <img src="{% static 'imagenes/logo 4.png' %}" width="55%">
+                </a>
+            </div>
+        </div> 
+
+<div class="col-lg-1 col-xs-12">
+                <div  class="box" class="owo">
+                    <a href="http://localhost:8000/pokemon/Registro">
+                    <img src="{% static 'imagenes/burhh.png' %}" width="100%">
+                    </a>
+                </div>
+            </div> 
+
+            <div class="col-lg-1 col-xs-12">
+                <div  class="box" class="owo">
+                    <a href="http://localhost:8000/pokemon/Equipo">
+                    <img src="{% static 'img/Listar.png' %}" width="100%">
+                    </a>
+                </div>
+            </div> 
+            <div class="col-lg-1 col-xs-12">
+                <div  class="box" class="owo">
+                    <a href="http://localhost:8000/pokemon/Nuevo_Equipo">
+                    <img src="{% static 'img/Agregar.png' %}" width="100%">
+                    </a>
+                </div>
+            </div> 
+            <div class="col-lg-1 col-xs-12">
+                <div  class="box" class="owo">
+                    <a href="http://localhost:8000/pokemon/Modificar_Equipo">
+                    <img src="{% static 'img/Modificar.png' %}" width="100%">
+                    </a>
+                </div>
+            </div> 
+   </nav> 
+</div>
+
+
+
+                        <div class="col-md-12  " id="imagen" class="centrado">
+                        <div class="box">
+                    <!-- Función js del carrusel-->
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                    <img id="owo"src="{% static 'imagenes/PortadaPokimon.jpg' %}" alt="">
+                                    <p id="textonegr">Ya esta disponible</p>
+                            <p id="textonegr">Solo en Nintendo Switch</p>
+                            </div>
+                            <div class="item">
+                            <img id="owo" src="{% static 'imagenes/portada5.jpg' %}" alt="">
+                                <p id="textonegr">Disponible ya en dispositivos Android e IOS</p>
+                                </div>
+                                <div class="item">
+                                <img id="owo" src="{% static 'imagenes/portada2.jpg' %}" alt="">
+                                </div>
+                                </div>
+                                <!-- Controles -->
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                             </div>
+
+
+
+
+
+
+    <div class="row">
+            <div class="col-xs-12">
+                <div class="box">
+                    <!--Función en js que al pusar un botón da información sobre lo que sale en el botón-->
+                        <h3  id="textonegr"> Revisar el Pokemon escogido para el comunity day en pokémon go, solo da click en el siguiente botón</h3>
+                        <button id="kk" onclick="alert('Turtwig - Torterra[Planta/Tierra] - Dia 15 de Septiembre - Hora 11:00 AM - 14:00 PM')">
+                                Ver comunity day de este mes Pokemon GO
+                        </button>
+           
+            </div>
+            </div>
+            </div>
+
+
+
+
+
+  
+            
+
+        <div class="col-log-6 col-xs-12">
+            <article>
+                <div  class="col-log-6 col-xs-12 " id="quienes" >
+                 <h3 > ¿Qué encontrarás en esta página? </h3>
+                    <div id="textonegr" class="box">
+                    <img  src="{% static 'imagenes/partebaja.jpg ' %} "   alt="" width="70%" >
+                        <br>______________________________________________________
+                        <br> Acá encontrarás todas las referencias del mundo sobre pokémon , como lo son los videojuegos, anime, manga e información sobre las tiers
+                        <br> -Videojuegos: Encontrarás todos los videojuegos de la saga pokémon, donde se explicará una breve descripción de cada juego y el año lanzado 
+                        <br> -Manga: Encontrarás que tiene de diferente de los demás
+                        <br> -Anime: Encontrarás toda la información de cada temporada de anime, así como los hitos más importantes 
+                        <br> -Tiers: Una lista de los mejores pokémones por lista
+                        <div id="columna">
+                        <a class="button_1" href="#">Menú Inicio</a>
+                        </div>
+                        </div>
+                    </div>
+                    </article>
+                </div>
+
+        </div>
+
+        <div class="box">
+<div class="col-log-6 col-xs-12">
+<div  class="col-log-6 col-xs-12 ">
+<h1 > Galeria de Post/imagenes </h1>
+
+
+{% block contenido%}
+<div class="row">
+<div class="col-log-12 col-xs-12">
+    <div class="box">
+        <div class="centrado">
+{% if posts %}
+{% for post in posts %}
+<div class="post-preview">
+    <a href="{% url 'pokemon:detalle_post' post.slug %}">
+    <h2 class="post-title">
+        <STRONG>{{ post.titulo }}</STRONG>
+    </h2>
+    <h3 class="post-descripcion">
+        Haz click aqui para ver
+    </h3>
+    <h3 class="imagen">
+    <img src="{{ post.imagen }}">
+    </a>
+    <p class="post-meta">Posted by
+         {{post.fecha_creacion}}</p>
+    </div>
+    <hr>
+    {% endfor %}
+{% else %}
+<h1>No existen post</h1>
+{% endif %}
+<hr>
+{% endblock contenido%}
+
+        <!--Libreria Js (Javascript)-->
+        <script src="{% static 'js/jquery-3.4.1.js' % }"></script>
+        <footer>
+            
+            <p  id="{% static 'piedepagina ' %} " class="{% static 'centrado ' %}"> Desarrollo Aplicaciones Web y Mobile , Todos los derechos reservados a PokeDUOC </p>
+            
+        </footer>
+</body>
+
+
+
+</html>

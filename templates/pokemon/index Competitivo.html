@@ -1,0 +1,292 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PokeDUOC/Tiers</title>
+<!--Librerias del css-->
+<link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<!-- Función js que retorna a la página anterior-->
+<input id="colorboton" class="boton-personalizado" type=”button” onClick="history.back()" value=Volver>
+<body style="background:#0069A5;">
+<div class="row"><!--seccion-->
+<div class="col-lg-4 cols-12" >
+    <div class="box">
+            <a href="http://localhost:8000/pokemon/">
+        <img src="{% static 'imagenes/logo.png' %}" width="45%" alt="">
+        </a>
+    </div>
+</div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+            <a href="http://localhost:8000/pokemon/Videojuegos">
+                <img src="{% static 'imagenes/logo 1.png' %}" width="89%">
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+            <a href="http://localhost:8000/pokemon/Competitivo">
+                <img src="{% static 'imagenes/logo 2.png' %}" width="100%">
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+            <a href="http://localhost:8000/pokemon/Anime">
+                <img src="{% static 'imagenes/logo 3.png' %}" width="59%">
+            </a>
+        </div>
+    </div>
+        <div class="col-lg-2 col-xs-12">
+            <div class="box">
+                <a href="http://localhost:8000/pokemon/Manga">
+                    <img src="{% static 'imagenes/logo 4.png' %}" width="53%">
+                </a>
+            </div>
+        </div> 
+    </nav> 
+</div>
+
+    <div class="row">
+            <div class="col-xs-12" id="imagen" class="centrado">
+                <div class="box">
+                    <img src="{% static 'imagenes/XD1.png' %}" width="50%" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row" >
+                <div class="col-lg-12" class="uwu">
+                    <h1>En el meta-game actual de pokemon, todos los pokemon son buenos si estan en buenas manos, pero 
+                        aqui unos consejos para poder destacar dentro del ambito competitivo </h1>
+                    </div>
+            </div>
+
+
+        
+        <div class="row">
+                <div class="col-lg-6">
+                    <div class="box">
+                            <div class="Texto_XD">Tabla de tipos (click en la imagen para ver en tamaño completo)</div>
+                            <a href="https://pm1.narvii.com/6113/0487344cd3154782745e960ad81ad72933babfbd_hq.jpg" target="_blank">
+                            <img src="https://pm1.narvii.com/6113/0487344cd3154782745e960ad81ad72933babfbd_hq.jpg" width="50%"> </a>
+                            <div class="Texto_XD">[Debilidades--> Tipo pokemon--> Ventajas]</div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box">
+                            <div class="Texto_XD">El proximo Pokemon Championship 2020 sera aprox en agosto del 2020</div>
+                            <a href="https://www.pokemon.com/es/play-pokemon/eventos-pokemon/torneos-pokemon/campeonatos-regionales/" target="_blank">
+                            <img src="https://media.redadn.es/imagenes/animanga-5_328032.jpg" width="59%"> </a>
+                            <div class="Texto_XD">Aun no se sabe donde se realizara, pero se utilizara el juego Pokemon Sword/Shield para combatir</div>
+                    </div>
+                </div>
+                </div>
+
+
+<div class="row" >
+    <div class="col-lg-12" class="uwu">
+        <h1>En esta seccion veremos cual es el meta actual de pokemon permitidos en competiciones y combates online deacuerdo
+            a las reglas competitivas de Smogon </h1>
+        </div>
+</div>
+
+
+
+
+
+
+
+  <div class="row">
+            <div class="col-xs-12" id="imagen" class="centrado">
+                <div class="box">
+                <img src="{% static 'imagenes/184.png' %}" width="50%">    
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+       
+
+        
+
+       
+        <div class="row"><!--seccion-->
+            <div class="col-lg-4 col-xs-12">
+                <div class="box">
+                        <div>Azumarill</div>
+                        <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/1/1a/latest/20140207184412/Azumarill.png/200px-Azumarill.png" width="21.7%">
+                        <div>Tipo Agua/Hada</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="box">
+                        <div>Mega Charizard Y</div>
+                        <img src="https://cdn.staticneo.com/w/pokemon/4/40/MegaCharizard.png" width="20.2%">
+                        <div>Tipo Fuego/Volador</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="box">
+                        <div>Garchomp</div>
+                        <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e4/latest/20151006162718/Garchomp.png/1200px-Garchomp.png" width="21.8%">
+                        <div>Tipo Dragon/Tierra</div>
+                </div>
+            </div>
+                <div class="col-lg-4 col-xs-12">
+                    <div class="box">
+                            <div>Greninja</div>
+                            <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/9/90/Greninja.png/revision/latest?cb=20140206230227" width="20%">
+                            <div>Tipo Agua/Siniestro</div>
+                    </div>
+                </div> 
+
+                <div class="col-lg-4 col-xs-12">
+                        <div class="box">
+                                <div>Magnezone</div>
+                                <img src="https://vignette.wikia.nocookie.net/dialgapoke/images/5/5a/Magnezone.png/revision/latest?cb=20110401064536&path-prefix=es" width="20%">
+                                <div>Tipo Electrico/Acero</div>
+                        </div>
+                    </div> 
+
+            <div class="col-lg-4 col-xs-12">
+                    <div class="box">
+                        <div>Mega Mawile</div>
+                        <img src="https://vignette.wikia.nocookie.net/pokemon-estrategias/images/c/cd/Mega_Mawile.png/revision/latest?cb=20140405184141&path-prefix=es" width="20%">
+                        <div>Tipo Hada/Acero</div>
+                     </div>
+                </div> 
+
+
+                <div class="col-lg-4 col-xs-12">
+                        <div class="box">
+                                <div>Mega Scizor</div>
+                                <img src="http://cdn.shopify.com/s/files/1/1433/5988/products/Scizor_grande.png?v=1511616483" width="20%">
+                                <div>Tipo Bicho/Acero</div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-xs-12">
+                            <div class="box">
+                                    <div>Serperior</div>
+                                    <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/6/6a/Serperior.png/revision/latest?cb=20110212234215" width="21.5%">
+                                    <div>Tipo Planta</div>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xs-12">
+                                <div class="box">
+                                        <div>Tyranitar</div>
+                                        <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c32c.png" width="20%">
+                                        <div>Tipo Roca/Siniestro</div>
+                                </div>
+                            </div>
+             </div>
+
+
+             <br>
+
+
+             <div class="row">
+                    <div class="col-xs-12" id="imagen" class="centrado">
+                        <div class="box">
+                        <img src="{% static 'imagenes/185.png' %}" width="50%">    
+                        </div>
+                    </div>
+                </div>
+              <div class="row"> 
+                  <h1> <h2>
+              </div>     
+                <div class="row"><!--seccion-->
+                    <div class="col-lg-4 col-xs-12">
+                        <div class="box">
+                                <div>Gardevoir</div>
+                                <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/2/28/Gardevoir.png/revision/latest?cb=20160309224927" width="21.7%">
+                                <div>Tipo Psiquico/Hada</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12">
+                        <div class="box">
+                                <div>Gyarados</div>
+                                <img src="https://cdn.bulbagarden.net/upload/4/41/130Gyarados.png" width="20%">
+                                <div>Tipo Agua/Volador</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12">
+                        <div class="box">
+                                <div>Porygon-Z</div>
+                                <img src="https://cdn.bulbagarden.net/upload/thumb/2/24/474Porygon-Z.png/1200px-474Porygon-Z.png" width="20%">
+                                <div>Tipo Normal</div>
+                        </div>
+                    </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="box">
+                                    <div>Salamence</div>
+                                    <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/f/fe/latest/20141113215012/Salamence.png/1200px-Salamence.png" width="20%">
+                                    <div>Tipo Dragon/Volador</div>
+                            </div>
+                        </div> 
+        
+                        <div class="col-lg-4 col-xs-12">
+                                <div class="box">
+                                        <div>Weavile</div>
+                                        <img src="https://images.wikidexcdn.net/mwuploads/wikidex/5/57/latest/20080321180614/Weavile.png" width="20%">
+                                        <div>Tipo Siniestro/Hada</div>
+                                </div>
+                            </div> 
+        
+                    <div class="col-lg-4 col-xs-12">
+                            <div class="box">
+                                <div>Bisharp</div>
+                                <img src="https://cdn.bulbagarden.net/upload/7/74/625Bisharp.png" width="18.5%">
+                                <div>Tipo Acero/Siniestro</div>
+                             </div>
+                        </div> 
+        
+        
+                        <div class="col-lg-4 col-xs-12">
+                                <div class="box">
+                                        <div>Blissey</div>
+                                        <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/2/2a/latest/20151017014327/Blissey.png/1200px-Blissey.png" width="20%">
+                                        <div>Tipo Normal</div>
+                                </div>
+                            </div>
+                
+                            <div class="col-lg-4 col-xs-12">
+                                    <div class="box">
+                                            <div>Gengar</div>
+                                            <img src="https://cdn.bulbagarden.net/upload/c/c6/094Gengar.png" width="20%">
+                                            <div>Tipo Fantasma/Veneno</div>
+                                    </div>
+                                </div>
+                
+                                <div class="col-lg-4 col-xs-12">
+                                        <div class="box">
+                                                <div>Hydreigon</div>
+                                                <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/1/1c/Hydreigon.png/revision/latest?cb=20110312231236" width="21.5%">
+                                                <div>Tipo Dragon/Siniestro</div>
+                                        </div>
+                                    </div>
+                     </div>
+
+                    
+        
+        <div class="col-xs-12" id="imagen" class="centrado">
+            <a href="https://play.pokemonshowdown.com/teambuilder"   target="_blank">
+                <img src="{% static 'imagenes/banner.png' %}" width="101.1%" alt="banner">
+                </a>
+            </div>
+            <footer>
+                 <p  id="piedepagina" class="centrado"> Desarrollo Aplicaciones Web y Mobile , Todos los derechos reservados a PokeDUOC </p>
+            </footer>
+
+</body>
+</html>

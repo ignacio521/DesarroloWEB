@@ -1,0 +1,16 @@
+{% block contenido %}
+
+<h2>Nuevo Equipo Pokemon</h2>
+<form action="" method='POST'>
+    {% csrf_token %}
+<table>
+         {{ form.as_table}}
+</table>
+
+<input type="reset" name="Limpiar">
+<input type="submit" name="Guardar">
+</form>
+{{ mensaje}}
+
+
+{% endblock %}

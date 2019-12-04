@@ -1,0 +1,24 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<meta charset="UTF-8">
+</head>
+<!-- Función js que retorna a la página anterior-->
+<input id="colorboton" class="boton-personalizado" type=”button” onClick="history.back()" value=Volver>
+<body background="https://i.pinimg.com/originals/1c/a6/e1/1ca6e1c35e2d884230242cc0326dbf28.jpg">
+
+    
+        <form id="form1" name="form1" method="GET" action="recibo.html">
+                <label for="user">Nombre Usuario *</label>
+                <input type="text" name="user" id="user" placeholder="Ingrese El usuario" />
+                <br>
+                <label for="pass">Contraseña *</label>
+                <input type="password" name="pass" id="pass"  minlength="6" placeholder="Ingrese  la Contraseña" required />
+                <br>
+                <button  id="colorboton"type="submit">Ingresar</button>
+            </form>
+</body>
+</html>

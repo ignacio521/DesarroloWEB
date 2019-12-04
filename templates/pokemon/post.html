@@ -1,0 +1,31 @@
+
+{% load staticfiles %}
+
+<link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %}" >
+
+<body style="background:#0069A5;">
+
+{% block titulo %}
+<div class="box">
+<h1>{{ detalle_post.titulo }}</h1>
+
+{% endblock titulo %}
+
+{% block XD%}
+<div class="box">
+<h4>{{detalle_post.contenido}}</h4>
+
+{% block imagen %}
+<div class="box">
+<img src="{{ detalle_post.imagen }}">
+{% endblock imagen %}
+
+
+
+{% endblock XD %}
+
+{% block contenido%}
+
+{% endblock contenido%}

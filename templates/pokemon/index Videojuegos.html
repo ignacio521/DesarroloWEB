@@ -1,0 +1,493 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PokeDUOC/Videojuegos</title>
+<!--Referencias al css-->
+<link rel="stylesheet" href="{% static 'css/flexboxgrid.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+<!-- Función js que retorna a la página anterior-->
+<input id="colorboton" class="boton-personalizado" type=”button” onClick="history.back()" value=Volver>
+<body style="background:#0069A5;">
+<div class="row"><!--seccion-->
+<div class="col-lg-4 cols-12" >
+    <div class="box">
+        <a  href="http://localhost:8000/pokemon/">
+        <img src="{% static 'imagenes/logo.png' %}"width="40%">
+        </a>
+    </div>
+</div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+             <a href="http://localhost:8000/pokemon/Videojuegos">
+                <img src="{% static 'imagenes/logo 1.png' %}" width="90%">
+                </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+                <a href="http://localhost:8000/pokemon/Competitivo">
+                <img src="{% static 'imagenes/logo 2.png' %}" width="100%"> 
+                </a>
+        </div>
+    </div>
+    <div class="col-lg-2 col-xs-12">
+        <div class="box">
+                <a href="http://localhost:8000/pokemon/Anime">
+                <img src="{% static 'imagenes/logo 3.png' %}" width="60%">
+                </a>
+        </div>
+    </div>
+        <div class="col-lg-2 col-xs-12">
+            <div class="box">
+                   <a href="http://localhost:8000/pokemon/Manga">
+                    <img src="{% static 'imagenes/logo 4.png' %}" width="55%">
+                    </a>
+            </div>
+        </div> 
+    </nav> 
+</div>
+
+    <div class="row">
+            <div class="col-xs-12" id="imagen" class="centrado">
+                <div class="box">
+                    <div  id="textonegr">
+                        <p>A continuación, se mostrarán todos los juegos de cada generación </p>
+                    </div>
+                    <img src="{% static 'imagenes/sagapokimon.png' %}" width="50%" alt="">
+                </div>
+            </div>
+        </div>
+        
+<div class="row">
+    <div class="col-xs-12" class="texto_XD" >
+        <p id="piedepagina" class="centrado"> Acá se mostrarán todos los videojuegos canonicos de la saga pokémon  </p>
+        </div>
+</div>
+
+
+
+
+
+  <div class="row">
+            <div class="col-xs-12" id="imagen" class="centrado">
+                <div class="box">
+                <img src="{% static 'imagenes/logojuegos.png' %}" width="50%">    
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div>
+        </div>
+
+       
+        <div class="row" ><!--seccion-->
+            <div class="col-lg-4 col-xs-12">
+                <div class="box" id="textonegr">
+                        <div>Pokémon Red Versión</div>
+                        <img src="{% static 'imagenes/Covers/1.jpg' %}" width="18%">
+                        <div>Consola: Game boy y Super Game Boy</div>
+                        <div>Año publicación: 27 de Febrero 1996 (Japón)</div>
+                        <div>Región: Kanto</div>
+                        <div>Director: Satoshi Tajiri</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="box" id="textonegr">
+                        <div>Pokémon Blue Versión</div>
+                        <img src="{% static 'imagenes/Covers/2.jpg' %}" width="16%">
+                        <div>Consola: Game boy y Super Game Boy </div>
+                        <div>Año publicación: 15 de Octubre 1996 (Japón)</div>
+                        <div>Región: Kanto</div>
+                        <div>Director: Satoshi Tajiri</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="box" id="textonegr">
+                        <div>Pokémon Yellow Versión</div>
+                        <img src="{% static 'imagenes/Covers/3.jpg' %}" width="21%">
+                        <div>Consola: Game boy y Super Game Boy</div>
+                        <div>Año publicación: 12 de Septiembre 1996 (Japón)</div>
+                        <div>Región: Kanto</div>
+                        <div>Director: Satoshi Tajiri</div>
+                </div>
+            </div>
+                <div class="col-lg-4 col-xs-12">
+                    <div class="box" id="textonegr">
+                            <div>Pokémon Silver Version</div>
+                            <img src="{% static 'imagenes/Covers/4.jpg' %}" width="20%">
+                            <div>Consola: Game boy Color , Nintendo 3DS</div>
+                            <div>Año publicación: 21 de Noviembre 1999 (Japón)</div>
+                            <div>Región: Johto</div>
+                            <div>Director(es): Satoshi Tajiri , Junichi Masuda</div>
+                    </div>
+                </div> 
+
+                <div class="col-lg-4 col-xs-12">
+                        <div class="box" id="textonegr">
+                                <div>Pokémon Gold Version</div>
+                                <img src="{% static 'imagenes/Covers/5.jpg' %}" width="20%">
+                                <div>Consola: Game boy Color , Nintendo 3DS</div>
+                                <div>Año publicación: 21 de Noviembre 1999 (Japón)</div>
+                                <div>Región: Johto</div>
+                                <div>Director(es): Satoshi Tajiri , Junichi Masuda</div>
+                        </div>
+                    </div> 
+
+            <div class="col-lg-4 col-xs-12">
+                    <div class="box" id="textonegr">
+                        <div>Pokémon Crystal Version</div>
+                        <img src="{% static 'imagenes/Covers/6.png' %}" width="20%">
+                        <div>Consola: Game boy Color </div>
+                        <div>Año publicación: 14 de Noviembre 2000 (Japón)</div>
+                        <div>Región: Johto</div>
+                        <div>Director:  Junichi Masuda</div>
+                     </div>
+                </div> 
+
+
+                <div class="col-lg-4 col-xs-12">
+                        <div class="box" id="textonegr">
+                                <div>Pokémon Saphire Version</div>
+                                <img src="{% static 'imagenes/Covers/7.jpg' %}" width="18%">
+                                <div>Consola: Game boy Advance</div>
+                                <div>Año publicación: 21 de Noviembre 2002 (Japón)</div>
+                                <div>Región: Hoenn</div>
+                                <div>Director: Junichi Masuda</div>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4 col-xs-12">
+                            <div class="box" id="textonegr">
+                                    <div>Pokémon Rubi Version</div>
+                                    <img src="{% static 'imagenes/Covers/8.png' %}" width="20%">
+                                    <div>Consola: Game boy Advance</div>
+                                    <div>Año publicación: 21 de Noviembre 2002 (Japón)</div>
+                                    <div>Región: Hoenn</div>
+                                    <div>Director: Junichi Masuda</div>
+                            </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xs-12">
+                                <div class="box" id="textonegr">
+                                        <div>Pokémon Esmerald Version</div>
+                                        <img src="{% static 'imagenes/Covers/9.jpg' %}" width="20%">
+                                        <div>Consola: Game boy Advance</div>
+                                        <div>Año publicación: 16 de Septiembre 2004 (Japón)</div>
+                                        <div>Región: Hoenn</div>
+                                        <div>Director: Shigeki Morimoto </div>
+                                    </div>
+                            </div>
+             </div>
+
+
+               
+                <div class="row"><!--seccion-->
+                    <div class="col-lg-4 col-xs-12">
+                        <div class="box" id="textonegr">
+                                <div>Pokémon LeafGreen Version </div>
+                                <img src="{% static 'imagenes/Covers/10.jpg' %}" width="18%">
+                                <div>Consola: Game boy Advance</div>
+                                <div>Año publicación: 29 de Enero 2004 (Japón)</div>
+                                <div>Región: Kanto</div>
+                                <div>Director: Junichi Masuda</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12">
+                        <div class="box" id="textonegr">
+                                <div>Pokémon FireRed Version</div>
+                                <img src="{% static 'imagenes/Covers/11.jpg' %}" width="18%">
+                                <div>Consola: Game boy Advance</div>
+                                <div>Año publicación: 29 de Enero 2004 (Japón)</div>
+                                <div>Región: Kanto</div>
+                                <div>Director: Junichi Masuda </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xs-12">
+                        <div class="box" id="textonegr">
+                                <div>pokemon Pearl Version</div>
+                                <img src="{% static 'imagenes/Covers/12.jpg' %}" width="18%">
+                                <div>Consola: Nintendo DS</div>
+                                <div>Año publicación: 28 de Septiembre 2006 (Japón)</div>
+                                <div>Región: Sinnoh</div>
+                                <div>Director: Junichi Masuda </div>
+                        </div>
+                    </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="box" id="textonegr">
+                                    <div>Pokémon Diamond Version</div>
+                                    <img src="{% static 'imagenes/Covers/13.jpg' %}" width="18%">
+                                    <div>Consola: Nintendo DS</div>
+                                    <div>Año publicación: 28 de Septiembre 2006 (Japón)</div>
+                                    <div>Región: Sinnoh</div>
+                                    <div>Director: Junichi Masuda </div>
+                            </div>
+                        </div> 
+        
+                        <div class="col-lg-4 col-xs-12">
+                                <div class="box" id="textonegr">
+                                        <div>Pokémon Platinum Version</div>
+                                        <img src="{% static 'imagenes/Covers/14.jpg' %}" width="18%">
+                                        <div>Consola: Nintendo DS</div>
+                                        <div>Año publicación: 13 de Septiembre 2008 (Japón)</div>
+                                        <div>Región: Sinnoh</div>
+                                        <div>Director: Takeshi Kawachimaru </div>
+                                </div>
+                            </div> 
+        
+                    <div class="col-lg-4 col-xs-12">
+                            <div class="box" id="textonegr">
+                                <div>Pokémon SoulSilver Version</div>
+                                <img src="{% static 'imagenes/Covers/15.jpg' %}" width="18%">
+                                <div>Consola: Nintendo DS</div>
+                                <div>Año publicación: 12 de Septiembre 2009 (Japón)</div>
+                                <div>Región: Johto</div>
+                                <div>Director: Shigeki Morimoto </div>
+                             </div>
+                        </div> 
+        
+        
+                        <div class="col-lg-4 col-xs-12">
+                                <div class="box" id="textonegr">
+                                        <div>Pokémon HearthGold Version</div>
+                                        <img src="{% static 'imagenes/Covers/16.jpg' %}" width="18%">
+                                        <div>Consola: Nintendo DS</div>
+                                        <div>Año publicación: 12 de Septiembre 2009 (Japón)</div>
+                                        <div>Región: Johto</div>
+                                        <div>Director: Shigeki Morimoto </div>
+                                </div>
+                            </div>
+                
+                            <div class="col-lg-4 col-xs-12">
+                                    <div class="box" id="textonegr">
+                                            <div>Pokémon White Version</div>
+                                            <img src="{% static 'imagenes/Covers/17.jpg' %}" width="18%">
+                                            <div>Consola: Nintendo DS</div>
+                                            <div>Año publicación: 18 de Septiembre 2010 (Japón)</div>
+                                            <div>Región: Teselia</div>
+                                            <div>Director: Junichi Masuda </div>
+                                    </div>
+                                </div>
+                
+                                <div class="col-lg-4 col-xs-12">
+                                        <div class="box" id="textonegr">
+                                                <div>Pokémon Black Versión </div>
+                                                <img src="{% static 'imagenes/Covers/18.jpg' %}" width="18%">
+                                                <div>Consola: Nintendo DS</div>
+                                                <div>Año publicación: 18 de Septiembre 2010 (Japón)</div>
+                                                <div>Región: Teselia</div>
+                                                <div>Director: Junichi Masuda </div>
+                                        </div>
+                                    </div>
+                     </div>
+
+                     <div class="row"><!--seccion-->
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="box" id="textonegr">
+                                    <div>Pokémon Black 2 Version </div>
+                                    <img src="{% static 'imagenes/Covers/19.jpg' %}" width="18%">
+                                    <div>Consola: Nintendo DS, Nintendo 2DS, Nintendo 3DS</div>
+                                    <div>Año publicación: 23 de Junio 2012 (Japón)</div>
+                                    <div>Región: Teselia</div>
+                                    <div>Director: 	Takao Unno</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="box" id="textonegr">
+                                    <div>Pokémon White 2 Version</div>
+                                    <img src="{% static 'imagenes/Covers/20.jpg' %}" width="18%">
+                                    <div>Consola: Nintendo DS, Nintendo 2DS, Nintendo 3DS</div>
+                                    <div>Año publicación: 23 de Junio 2012 (Japón)</div>
+                                    <div>Región: Teselia</div>
+                                    <div>Director: 	Takao Unno</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <div class="box" id="textonegr">
+                                    <div>pokemon X Version</div>
+                                    <img src="{% static 'imagenes/Covers/21.png' %}" width="18%">
+                                    <div>Consola: Nintendo 2DS , Nintendo 3DS</div>
+                                    <div>Año publicación: 13 de Octubre 2013 </div>
+                                    <div>Región: Kalos</div>
+                                    <div>Director: Junichi Masuda </div>
+                            </div>
+                        </div>
+                            <div class="col-lg-4 col-xs-12">
+                                <div class="box" id="textonegr">
+                                        <div>Pokémon Y Version</div>
+                                        <img src="{% static 'imagenes/Covers/22.jpg' %}" width="18%">
+                                        <div>Consola: Nintendo 2DS , Nintendo 3DS</div>
+                                        <div>Año publicación: 13 de Octubre 2013 </div>
+                                        <div>Región: Kalos</div>
+                                        <div>Director: Junichi Masuda </div>
+                                </div>
+                            </div> 
+            
+                            <div class="col-lg-4 col-xs-12">
+                                    <div class="box" id="textonegr">
+                                            <div>Pokémon RubiOmega Version</div>
+                                            <img src="{% static 'imagenes/Covers/23.jpg' %}" width="18%">
+                                            <div>Consola: Nintendo 2DS, Nintendo 3DS</div>
+                                            <div>Año publicación: 21 de Noviembre 2014 </div>
+                                            <div>Región: Hoenn</div>
+                                            <div>Director: Shigeru Ohmori </div>
+                                    </div>
+                                </div> 
+            
+                        <div class="col-lg-4 col-xs-12">
+                                <div class="box" id="textonegr">
+                                    <div>Pokémon AlphaSaphiro Version</div>
+                                    <img src="{% static 'imagenes/Covers/24.jpg' %}" width="18%">
+                                    <div>Consola: Nintendo 2DS, Nintendo 3DS</div>
+                                    <div>Año publicación: 21 de Noviembre 2014 </div>
+                                    <div>Región: Hoenn</div>
+                                    <div>Director: Shigeru Ohmori </div>
+                                 </div>
+                            </div> 
+            
+            
+                            <div class="col-lg-4 col-xs-12">
+                                    <div class="box" id="textonegr">
+                                            <div>Pokémon Moon Version</div>
+                                            <img src="{% static 'imagenes/Covers/25.jpg' %}" width="18%">
+                                            <div>Consola: 	Nintendo 3DS, Nintendo 3DS XL, New Nintendo 3DS
+                                                New Nintendo 3DS XL , Nintendo 2DS, New Nintendo 2DS XL</div>
+                                            <div>Año publicación: 18 de Noviembre 2016 (Japón)</div>
+                                            <div>Región: Alola</div>
+                                            <div>Director: 	Shigeru Ohmori </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="col-lg-4 col-xs-12">
+                                        <div class="box" id="textonegr">
+                                                <div>Pokémon Sun Version</div>
+                                                <img src="{% static 'imagenes/Covers/26.png' %}" width="18%">
+                                                <div>Consola: 	Nintendo 3DS, Nintendo 3DS XL, New Nintendo 3DS
+                                                    New Nintendo 3DS XL , Nintendo 2DS, New Nintendo 2DS XL</div>
+                                                <div>Año publicación: 18 de Noviembre 2016 (Japón)</div>
+                                                <div>Región: Alola</div>
+                                                <div>Director: 	Shigeru Ohmori </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-xs-12">
+                                            <div class="box" id="textonegr">
+                                                    <div>Pokémon UltraSun Versión </div>
+                                                    <img src="{% static 'imagenes/Covers/27.jpg' %}" width="18%">
+                                                    <div>Consola: 	Nintendo 3DS, Nintendo 3DS XL, New Nintendo 3DS
+                                                        New Nintendo 3DS XL , Nintendo 2DS, New Nintendo 2DS XL</div>
+                                                    <div>Año publicación: 17 de Septiembre 2017 (Japón)</div>
+                                                    <div>Región: Alola</div>
+                                                    <div>Director: 	Kazumasa Iwao </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-xs-12">
+                                            <div class="box" id="textonegr">
+                                                    <div>Pokémon UltraMoon Versión </div>
+                                                    <img src="{% static 'imagenes/Covers/28.jpg' %}" width="18%">
+                                                    <div>Consola: 	Nintendo 3DS, Nintendo 3DS XL, New Nintendo 3DS
+                                                        New Nintendo 3DS XL , Nintendo 2DS, New Nintendo 2DS XL</div>
+                                                    <div>Año publicación: 17 de Septiembre 2017 (Japón)</div>
+                                                    <div>Región: Alola</div>
+                                                    <div>Director: 	Kazumasa Iwao </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-xs-12">
+                                                <div class="box" id="textonegr">
+                                                        <div>Pokémon Let´s Go Pikachu </div>
+                                                        <img src="{% static 'imagenes/Covers/31.jpg' %}" width="18%">
+                                                        <div>Consola: Nintendo Switch </div>
+                                                        <div>Año publicación: 16 de Noviembre 2018 </div>
+                                                        <div>Región: Kanto</div>
+                                                        <div>Director: Junichi Masuda </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-xs-12">
+                                                    <div class="box" id="textonegr">
+                                                            <div>Pokémon Let´s Go Eevee </div>
+                                                            <img src="{% static 'imagenes/Covers/32.jpg' %}" width="18%">
+                                                            <div>Consola: Nintendo Switch </div>
+                                                            <div>Año publicación: 16 de Noviembre 2018 </div>
+                                                            <div>Región: Kanto</div>
+                                                            <div>Director: Junichi Masuda </div>
+                                                    </div>
+                                                </div>
+                                        <div class="col-lg-4 col-xs-12">
+                                            <div class="box" id="textonegr">
+                                                <div>¡¡¡¡YA DISPONIBLE¡¡¡</div>
+                                                    <div>Pokémon Sword Versión </div>
+                                                    <img src="{% static 'imagenes/Covers/29.jpg' %}" width="18%">
+                                                    <div>Consola: Nintendo Switch </div>
+                                                    <div>Año publicación: 15 de Noviembre 2019 </div>
+                                                    <div>Región: Galar</div>
+                                                    <div>Director:  Shigeru Ohmori </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-xs-12">
+                                            <div class="box" id="textonegr">
+                                                <div>¡¡¡¡YA DISPONIBLE¡¡¡</div>
+                                                    <div>Pokémon Shield Versión </div>
+                                                    <img src="{% static 'imagenes/Covers/30.jpg' %}" width="18%">
+                                                    <div>Consola: Nintendo Switch </div>
+                                                    <div>Año publicación: 15 de Noviembre 2019 </div>
+                                                    <div>Región: Galar</div>
+                                                    <div>Director:  Shigeru Ohmori </div>
+                                            </div>
+                                        </div>
+                         </div>
+                         <div>
+                         <div class="row">
+                                <div class="col-xs-12" id="imagen" class="centrado">
+                                    <div class="box">
+                                    <img src="{% static 'imagenes/spinoff.png' %}" width="50%">    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-lg-4 col-xs-12">
+                                    <div class="box" id="textonegr">
+                                            <div>Saga Mundo Misterioso </div>
+                                            <div>Juego Representativo: Exploradores del cielo</div>
+                                            <img src="{% static 'imagenes/Covers/33.jpg' %}" width="18%">
+                                            <div>Consola: Nintendo DS </div>
+                                            <div>Año publicación: 18 de Abril de 2009 (Japón) </div>
+                                            <div>Dsintinción: </div>
+                                            <div>Director(es): Seiichiro Nagahata
+                                                    Hironori Ishigami</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-xs-12">
+                                        <div class="box" id="textonegr">
+                                                <div>Saga Ranger </div>
+                                                <div>Juego Representativo: Pokémon Ranger</div>
+                                                <img src="{% static 'imagenes/Covers/34.jpg' %}" width="18%">
+                                                <div>Consola: Nintendo DS </div>
+                                                <div>Año publicación: 23 de Marzo de 2006 (Japón)</div>
+                                                <div>Distinción:  </div>
+                                                <div>Distribuidor: Nintendo </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-xs-12">
+                                            <div class="box" id="textonegr">
+                                                    <div>Saga Stadium </div>
+                                                    <div>Juego Representativo: Pokémon Stadium 2</div>
+                                                    <img src="{% static 'imagenes/Covers/35.png' %}" width="18%">
+                                                    <div>Consola: Nintendo 64 </div>
+                                                    <div>Año publicación: 14 de Diciembre de 2000 </div>
+                                                    <div>Distinción : Juego por batallas/div>
+                                                    <div>Director: Takao Shimizu</div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
+<footer>
+    <p id="piedepagina" class="centrado"> Desarrollo Aplicaciones WEB y Mobile, PokeDUOC Todos los derechos reservados</p>
+</footer>
+</body>
+</html>

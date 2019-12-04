@@ -1,0 +1,40 @@
+
+
+{% block contenido %}
+
+<h2>Listado de Equipos de Pokemon</h2>
+
+<table>
+   <tr>
+     <th>id_Equipo</th>
+     <th>Nombre Equipo</th>
+     <th>Pokemón 1 </th>
+     <th>Pokemón 2 </th>
+     <th>Pokemón 3 </th>
+     <th>Pokemón 4 </th>
+     <th>Pokemón 5 </th>
+     <th>Pokemón 6 </th>
+     <th>Opciones</th>
+   </tr> 
+      {% for p in Equipo %}
+<tr>
+  <td>{{ p.id_eq }}</td>
+  <td>{{ p.nombre_equipo}}</td>
+  <td>{{ p.pokemon_1 }}</td>
+  <td>{{ p.pokemon_2 }}</td>
+  <td>{{ p.pokemon_3 }}</td>
+  <td>{{ p.pokemon_4 }}</td>
+  <td>{{ p.pokemon_5 }}</td>
+  <td>{{ p.pokemon_6 }}</td>
+  
+
+
+
+
+</tr>
+
+       {% endfor %}
+
+</table>
+
+{% endblock %}
